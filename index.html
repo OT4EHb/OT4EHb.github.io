@@ -58,6 +58,44 @@
         </li>
         <li><a href="ftp://user:password@example.com/myfile.zip">Скачать без регистрации и СМС</a></li>
     </ul>
-    
+
+    <div style="font-size: 18px; border: 1px solid; text-align: center; width: 500px; margin: 0 auto;">
+        <form action="/" method="post">
+            <br>
+            <label>Введите ФИО:<br><input placeholder="Иванов Иван Иванович" name="FIO"></label><br><br>
+            <label>Введите номер телефона:<br><input type="tel" placeholder="+7(XXX) XXX-XX-XX" name="tel"></label><br><br>
+            <label>Введите email:<br><input type="email" placeholder="email@email.com" name="email"></label><br><br>
+            <label>Введите дату рождения:<br><input type="date" name="DR" style="width: 150px; text-align: center;"></label><br><br>
+
+            Выберите ваш пол:<br>
+            <label><input type="radio" name="sex">Мужской</label>                               
+            <label><input type="radio" name="sex">Женский</label>                                 
+            <label><input type="radio" name="sex" checked="checked">Не определился</label>                                
+            <label><input type="radio" name="sex">Боевой вертолёт</label><br><br>
+
+            Выберите любимый(-ые) язык(-и) программирования:<br>
+            <select multiple name="JP" style="width: 200px; height: 100px;">
+                <option>Pascal</option>
+                <option selected>C</option>
+                <option selected>C++</option>
+                <option>JavaScript</option>
+                <option>PHP</option>
+                <option selected>Python</option>
+                <option selected>Java</option>
+                <option>Haskel</option>
+                <option>Clojure</option>
+                <option>Prolog</option>
+                <option>Scala</option>
+            </select><br><br>
+
+            Расскажите о своей жизни(биография):<br>
+            <textarea name="bio" cols="40" rows="10" placeholder="Начал писать свои первые произведения﻿ уже в семь лет. Первым начал зарабатывать литературным трудом. Создавал не только лирические стихи﻿, но и произведения в поддержку революционеров — за вольнодумство даже отправляли в ссылки."></textarea>
+            <br><br>
+
+            <label><input type="checkbox" name="check">С контрактом ознакомлен(-а)</label><br><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </div>
+    <br>
 </body>
 </html>
