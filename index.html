@@ -20,20 +20,20 @@
         <li><a href="/about/about.html">Внутренняя страница</a></li>
         <li><a href="/">Главная страница</a></li>
         <li><a href="#3">EUIV</a></li>
-        <li><a href="https://www.w3schools.com/html?a&b&c">HTML</a></li>
+        <li><a href="https://www.w3schools.com/html?a=1&b=2&c=3">HTML</a></li>
         <li><a id="123153" href="https://www.w3schools.com/html?id=2">HTML</a></li>
         <li><a href="./">Относительная сcылка на текущий каталог</a></li>
-        <li><a href="./about/about.html">Относительная сcылка на каталок абоут</a></li>
+        <li><a href="./about/about.html">Относительная сcылка на каталог about</a></li>
         <li><a href="../">Относительная сcылка на каталог уровнем выше</a></li>
         <li><a href="../../">Относительная сcылка на каталог двумя уровнями выше</a></li>
-        <li><p>Здесь абзац, а вот и <a href="http://kubsu.ru">ссылка</a></p></li>
+        <li><p>Ссылка на сайт <a href="http://kubsu.ru">КубГУ</a></p></li>
         <li><a href="https://eu4.paradoxwikis.com/Georgian_Crisis#Finishing_conditions" id="3">Условия завершения Грузинского кризиса EUIV</a></li>
         <li>
-             <map name="primary">
+             <map name="kar">
                  <area shape="circle" coords="263,84,25" href="https://minecraft.fandom.com/ru/wiki/%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B0" alt="Круг">
                  <area shape="rect" coords="58,30,166,139" href="https://minecraft.fandom.com/ru/wiki/%D0%9A%D1%80%D0%B0%D1%84%D1%82" alt="Прямоугольник">
              </map>
-             <img usemap="#primary" src="Final.jpg" width="350" height="150" alt="Финал">
+             <img usemap="#kar" src="Final.jpg" width="350" height="150" alt="Финал">
         </li>
         <li><a href="">Ссылка с пустым href</a></li>
         <li><a>Ссылка без href</a></li>
@@ -60,7 +60,7 @@
     </ul>
 
     <div style="font-size: 18px; border: 1px solid; text-align: center; width: 500px; margin: 0 auto;">
-        <form action="/" method="post">
+        <form action="./" method="post">
             <br>
             <label>Введите ФИО:<br><input placeholder="Иванов Иван Иванович" name="FIO"></label><br><br>
             <label>Введите номер телефона:<br><input type="tel" placeholder="+7(XXX) XXX-XX-XX" name="tel"></label><br><br>
@@ -70,9 +70,8 @@
             Выберите ваш пол:<br>
             <label><input type="radio" name="sex">Мужской</label>                               
             <label><input type="radio" name="sex">Женский</label>                                 
-            <label><input type="radio" name="sex" checked="checked">Не определился</label>                                
-            <label><input type="radio" name="sex">Боевой вертолёт</label><br><br>
-
+            <label><input type="radio" name="sex" checked="checked">Не определился</label> 
+            
             Выберите любимый(-ые) язык(-и) программирования:<br>
             <select multiple name="JP" style="width: 200px; height: 100px;">
                 <option>Pascal</option>
@@ -88,7 +87,7 @@
                 <option>Scala</option>
             </select><br><br>
 
-            Расскажите о своей жизни(биография):<br>
+            Расскажите о своей жизни (биография):<br>
             <textarea name="bio" cols="40" rows="10" placeholder="Начал писать свои первые произведения﻿ уже в семь лет. Первым начал зарабатывать литературным трудом. Создавал не только лирические стихи﻿, но и произведения в поддержку революционеров — за вольнодумство даже отправляли в ссылки."></textarea>
             <br><br>
 
