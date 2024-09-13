@@ -60,12 +60,12 @@
     </ul>
 
     <div style="font-size: 18px; border: 1px solid; text-align: center; width: 500px; margin: 0 auto;">
-        <form action="./index.html" method="post">
+        <form action="./" method="post">
             <br>
-            <label>Введите ФИО:<br><input placeholder="Иванов Иван Иванович" name="FIO"></label><br><br>
-            <label>Введите номер телефона:<br><input type="tel" placeholder="+7(XXX) XXX-XX-XX" name="tel"></label><br><br>
-            <label>Введите email:<br><input type="email" placeholder="email@email.com" name="email"></label><br><br>
-            <label>Введите дату рождения:<br><input type="date" name="DR" style="width: 150px; text-align: center;"></label><br><br>
+            <label>Введите ФИО:<br><input placeholder="Иванов Иван Иванович" name="FIO" required></label><br><br>
+            <label>Введите номер телефона:<br><input type="tel" placeholder="+7(XXX) XXX-XX-XX" name="tel" required></label><br><br>
+            <label>Введите email:<br><input type="email" placeholder="email@email.com" name="email" required></label><br><br>
+            <label>Введите дату рождения:<br><input type="date" name="DR" style="width: 150px; text-align: center;" required></label><br><br>
 
             Выберите ваш пол:<br>
             <label><input type="radio" name="sex">Мужской</label>                               
@@ -91,7 +91,7 @@
             <textarea name="bio" cols="40" rows="10" placeholder="Начал писать свои первые произведения﻿ уже в семь лет. Первым начал зарабатывать литературным трудом. Создавал не только лирические стихи﻿, но и произведения в поддержку революционеров — за вольнодумство даже отправляли в ссылки."></textarea>
             <br><br>
 
-            <label><input type="checkbox" name="check">С контрактом ознакомлен(-а)</label><br><br>
+            <label><input type="checkbox" name="check" required>С контрактом ознакомлен(-а)</label><br><br>
             <input type="submit" value="Сохранить">
         </form>
     </div>
