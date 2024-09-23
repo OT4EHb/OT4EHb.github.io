@@ -1,1 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ЛР 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>        
+        <img src="../res/Winux.jpg" alt="logo" id="logo">
+        <nav>
+            <a href="../">Лабораторная работа 1</a> |
+            <a href="../2">Лабораторная работа 2</a> |
+            <a href="#" id="lr2">Лабораторная работа 3</a> |
+            <a href="../about/about.html">about</a>
+        </nav>
+        <p id="namesite">Сайт лабораторных работ</p>
+    </header>
 
+    <div class="content">
+        <div class="mylist">
+            <h2>Список гиперссылок:</h2>
+            <ul>
+                <li><a href="http://kubsu.ru/" id="1">КубГУ</a></li>
+                <li><a href="https://kubsu.ru">КубГУ</a></li>
+                <li><a href="https://kubsu.ru" id="2"><img src="../image.jpg" width="280" height="210" alt="Здесь картинка"></a></li>
+                <li><a href="/about/about.html">Внутренняя страница</a></li>
+                <li><a href="/">Главная страница</a></li>
+                <li><a href="#3">EUIV</a></li>
+                <li><a href="https://www.w3schools.com/html?a=1&b=2&c=3">HTML</a></li>
+                <li><a id="123153" href="https://www.w3schools.com/html?id=2">HTML</a></li>
+                <li><a href="./">Относительная сcылка на текущий каталог</a></li>
+                <li><a href="../about/about.html">Относительная сcылка на каталог about</a></li>
+                <li><a href="../">Относительная сcылка на каталог уровнем выше</a></li>
+                <li><a href="../../">Относительная сcылка на каталог двумя уровнями выше</a></li>
+                <li><p id="p1">Ссылка на сайт <a href="http://kubsu.ru">КубГУ</a></p></li>
+                <li><a href="https://eu4.paradoxwikis.com/Georgian_Crisis#Finishing_conditions" id="3">Условия завершения Грузинского кризиса EUIV</a></li>
+                <li>
+                    <map name="kar">
+                        <area shape="circle" coords="263,84,25" href="https://minecraft.fandom.com/ru/wiki/%D0%9B%D0%BE%D0%BF%D0%B0%D1%82%D0%B0" alt="Круг">
+                        <area shape="rect" coords="58,30,166,139" href="https://minecraft.fandom.com/ru/wiki/%D0%9A%D1%80%D0%B0%D1%84%D1%82" alt="Прямоугольник">
+                    </map>
+                    <img usemap="#kar" src="../Final.jpg" width="350" height="150" alt="Финал" id="final">
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a id="nothref">Ссылка без href</a></li>
+                <li><a href="https://kubsu.ru" rel="nofollow">Я вам запрещаю переходить</a></li>
+                <li><!--noindex--><a href="https://kubsu.ru">Я вам валидно запрещаю индексировать</a><!--/noindex--></li>
+                <li>
+                    <h3 id="rezip">Топ рецептов для студента:</h3>
+                    <ol reversed>
+                        <li>
+                            <a title="Доширак с сосисками" href="https://eda.ru/media/master-klass/kak-sdelat-chertovski-vkusnyy-doshirak">
+                                Доширак с сосисками<br>
+                                <img alt="Красивая фотка с дошираком с сосисками" src="../doshirak.png" class="top">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Пельмени" href="https://lifehacker.ru/kak-varit-pelmeni/">
+                                Пельмени<br>
+                                <img alt="Красивая фотка с пельменями" src="../pelmeni.jpg" class="top">
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Макароны с сосисками" href="https://lifehacker.ru/kak-skolko-varit-makarony/">
+                                Макароны с сосисками<br>
+                                <img alt="Красивая фотка с макаронами" src="../makaroshki.png" class="top">
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:password@example.com/myfile.zip">Скачать без регистрации и СМС</a></li>
+            </ul>
+        </div>
+
+        <div class="mytable">
+            <h2>Грубое усиление ножа бандита:</h2>
+            <table>
+                <tr>
+                    <th rowspan="2" id="grub">Грубое</th>
+                    <th>Параметры атаки</th>
+                    <th colspan="2">Бонусы</th>
+                    <th colspan="4">Сокращение урона</th>
+                </tr>
+                <tr>
+                    <td>Физический урон</td>
+                    <td>Сила</td>
+                    <td>Ловкость</td>
+                    <td>Физическая защита</td>
+                    <td>Защита от магии</td>
+                    <td>Защита от огня</td>
+                    <td>Защита от молнии</td>
+                </tr>
+                <tr>
+                    <td>+0</td>
+                    <td>96</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>+1</td>
+                    <td>102</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>+2</td>
+                    <td>108</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>+3</td>
+                    <td>115</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>+4</td>
+                    <td>121</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>+5</td>
+                    <td>128</td>
+                    <td>E</td>
+                    <td>C</td>
+                    <td>45</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Компоненты</th>
+                    <th colspan="6">Большой осколок титанита 10x</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="myform">
+            <h2>Форма:</h2>
+            <form action="./" method="post">
+                <br>
+                <label>Введите ФИО:<br><input placeholder="Иванов Иван Иванович" name="FIO" required></label><br>
+                <label>Введите номер телефона:<br><input type="tel" placeholder="+7(XXX) XXX-XX-XX" name="tel" required></label><br>
+                <label>Введите email:<br><input type="email" placeholder="email@email.com" name="email" required></label><br>
+                <label>Введите дату рождения:<br><input type="date" name="DR" style="width: 150px; text-align: center;" required></label><br>
+
+                Выберите ваш пол:<br>
+                <label><input type="radio" name="sex" checked>Мужской</label>
+                <label><input type="radio" name="sex">Женский</label><br>
+
+                Выберите любимый(-ые) язык(-и) программирования:<br>
+                <select multiple name="JP" style="width: 200px; height: 100px;">
+                    <option>Pascal</option>
+                    <option selected>C</option>
+                    <option selected>C++</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option selected>Python</option>
+                    <option selected>Java</option>
+                    <option>Haskel</option>
+                    <option>Clojure</option>
+                    <option>Prolog</option>
+                    <option>Scala</option>
+                </select><br>
+
+                Расскажите о своей жизни (биография):<br>
+                <textarea name="bio" cols="40" rows="10" placeholder="Начал писать свои первые произведения﻿ уже в семь лет. Создавал не только стихи﻿, но и произведения в поддержку революционеров — за вольнодумство даже отправляли в ссылки."></textarea>
+                <br>
+
+                <label><input type="checkbox" name="check" required>С контрактом ознакомлен(-а)</label><br>
+                <input type="submit" value="Сохранить">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p id="pfooter">(C) Федченко Григорий</p>
+    </footer>
+</body>
+</html>
