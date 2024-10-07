@@ -1,1 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ЛР5</title>
+    <script>
+        function click1() {
+            let f1 = document.getElementsByName("field1");
+            let f2 = document.getElementsByName("field2");            
+            let r = document.getElementById("result");
+            if (f1[0].value.match(/^\d+$/) == null) {
+                r.innerHTML = "Некорректно";
+                return false;
+            }
+            r.innerHTML = Number(f1[0].value) * f2[0].textContent;
+            return false;
+        }
 
+        function selectFunction() {
+            let f2 = document.getElementsByName("field2");
+            let s1 = document.getElementsByName("select1");
+            switch (s1[0].value) {
+                case "v1":
+                    f2[0].textContent = 8;
+                    break;
+                case "v2":
+                    f2[0].textContent = 9;
+                    break;
+                case "v3":
+                    f2[0].textContent = 10;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        <input name="field1" type="text" placeholder="Количество">
+        <span name="field2">8</span>
+        <select name="select1" onchange="selectFunction()">
+            <option value="v1">Курица</option>
+            <option value="v2">Бочка</option>
+            <option value="v3">Клоун</option>
+        </select>
+        <button id="button1" onclick="return click1();">Посчитать</button>
+
+    </form>
+    <div id="result"></div>
+</body>
+</html>
