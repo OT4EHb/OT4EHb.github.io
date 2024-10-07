@@ -19,8 +19,10 @@
         }
 
         function selectFunction() {
+            let r = document.getElementById("result");
             let f2 = document.getElementsByName("field2");
             let s1 = document.getElementsByName("select1");
+            r.innerHTML = "";
             switch (s1[0].value) {
                 case "v1":
                     f2[0].textContent = 8;
