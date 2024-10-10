@@ -1,19 +1,9 @@
-Это первая лабораторная работа, ссылка на сайт:
+# Таблица лабораторных работ
 
-https://ot4ehb.github.io/
-
-Вторая:
-
-https://ot4ehb.github.io/2
-
-Третья:
-
-https://ot4ehb.github.io/3
-
-Четвёртая:
-
-https://ot4ehb.github.io/4
-
-Пятая:
-
-https://ot4ehb.github.io/5
+|номер ЛР|ссылка|
+|:-:|:-:|
+|1|https://ot4ehb.github.io|
+|2|https://ot4ehb.github.io/2|
+|3|https://ot4ehb.github.io/3|
+|4|https://ot4ehb.github.io/4|
+|5|https://ot4ehb.github.io/5|
