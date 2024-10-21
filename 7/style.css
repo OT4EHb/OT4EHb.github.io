@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+img{
+    width: 10vw;
+    margin: 0 auto;
+}
+
+.multiple-items{
+    width: 960px;
+    margin: 1vw auto;
+}
+
+.slick-prev, .slick-next{
+    color: bisque;
+    background-color: black;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: aqua;
+}
