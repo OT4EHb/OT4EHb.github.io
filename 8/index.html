@@ -13,14 +13,14 @@
         Открыть форму
     </button>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Форма</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="buttonClose"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="./" method="post" class="px-2">
+                    <form action="https://formcarry.com/s/77refVsM9Xy" method="post" class="px-2">
                         <label class="form-control bg-warning border-0 form-label">
                             Введите ФИО:
                             <input placeholder="Иванов Иван Иванович" name="FIO" required class="form-control">
@@ -41,15 +41,12 @@
                             Сообщение:
                             <textarea class="form-control" name="Message" placeholder="Помогите"></textarea>
                         </label>
-                        <label class="form-control bg-warning border-0 my-2">
-                            <input type="checkbox" class="form-check-input" required>
+                        <label class="form-control bg-warning border-0 my-2 form-label">
+                            <input type="checkbox" class="form-check-input" required name="Sogl">
                             С политикой обработки персональных данных согласен
                         </label>
+                        <input type="submit" value="Сохранить" class="btn-success btn my-2 form-control" id="buttonSave">
                     </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="buttonClose">Закрыть</button>
-                    <button type="button" class="btn btn-primary">Сохранить</button>
                 </div>
             </div>
         </div>
