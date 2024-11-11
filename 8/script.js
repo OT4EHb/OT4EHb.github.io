@@ -22,8 +22,31 @@ function saveValue() {
     window.localStorage.setItem(this.name, this.value);
 }
 
-function saveForm() {
-    window.localStorage.clear();
+function saveForm(event) {
+    event.preventDefault();
+    if (!document.querySelector("form").reportValidity()) {
+        return;
+    }
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.open("POST", "https://formcarry.com/s/77refVsM9Xy");
+    httpRequest.setRequestHeader("Content-Type", "application/json");
+    httpRequest.setRequestHeader("Accept", "application/json");
+    let obj = {};
+    let inputs = document.querySelectorAll(".form-control:not(.form-label)");
+    inputs.forEach(function (i) {
+        obj[i.name] = i.value;
+    });
+    httpRequest.send(JSON.stringify(obj));
+    httpRequest.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            document.querySelector(".otvet").innerHTML = "Успешно";
+            window.localStorage.clear();
+        } else {
+            document.querySelector(".otvet").innerHTML = "Повторите попытку";
+        }
+        const elemModal = document.querySelector("#exampleModal");
+        bootstrap.Modal.getInstance(elemModal).hide();
+    };
 }
 
 window.addEventListener("DOMContentLoaded", function () {
