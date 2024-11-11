@@ -39,13 +39,15 @@ function saveForm(event) {
     httpRequest.send(JSON.stringify(obj));
     httpRequest.onreadystatechange = function () {
         if (this.readyState === 4) {
-            document.querySelector(".otvet").innerHTML = "Успешно";
-            window.localStorage.clear();
-        } else {
-            document.querySelector(".otvet").innerHTML = "Повторите попытку";
+            let otvet = document.querySelector(".otvet");
+            if (this.status === 200) {
+                otvet.innerHTML = "Успешно";
+                window.localStorage.clear();
+            } else {
+                otvet.innerHTML = "Повторите попытку";
+            }
+            historyBack();
         }
-        const elemModal = document.querySelector("#exampleModal");
-        bootstrap.Modal.getInstance(elemModal).hide();
     };
 }
 
