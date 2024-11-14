@@ -1,4 +1,7 @@
-﻿function historyAdd() {
+﻿function isOpenModal() {
+    return window.location.href.match(/#exampleModal/);
+}
+function historyAdd() {
     let stateObj = {
         modal: "true"
     };
@@ -11,10 +14,11 @@ function historyBack() {
 
 function historyChange() {
     const elemModal = document.querySelector("#exampleModal");
-    if (window.location.href.match(/#/) !== null) {
-        new bootstrap.Modal(elemModal).show();
+    const modal = bootstrap.Modal.getOrCreateInstance(elemModal);
+    if (isOpenModal() !== null) {
+        modal.show();
     } else {
-        bootstrap.Modal.getInstance(elemModal).hide();
+        modal.hide();
     }
 }
 
@@ -66,4 +70,5 @@ window.addEventListener("DOMContentLoaded", function () {
         document.getElementsByName(i)[0].value = lStor.getItem(i);
     });
     document.getElementById("buttonSave").addEventListener("click", saveForm);
+    historyChange();
 });
